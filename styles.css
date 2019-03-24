@@ -5,18 +5,12 @@ html {
 
 body {
     margin: 0px;
+    background: url("img.png") no-repeat;
+    background-size: contain;
 }
 
 .root {
     margin: 0rem 6.25%;
-}
-
-.head-image {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    width: 100%;
 }
 
 .head__content {
@@ -180,15 +174,16 @@ body {
     font-weight: bold;
 }
 
-.head__link {
-    font-size: 0.69rem;
-    line-height: 1.25rem;
-    color: #FFFFFF;
-}
-
 .label-icon {
     margin: 0 0.7rem;
     opacity: 0.7;
+    width: 1.125rem;
+    height: 1rem;
+}
+
+.label-icon_small {
+    width: 0.625rem;
+    height: 0.313rem;
 }
 
 .view-mode__icon {
@@ -289,6 +284,15 @@ body {
     font-family: inherit;
 }
 
+.text_bold-small {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.69rem;
+    line-height: 1.25rem;
+    color: #FFFFFF;
+}
+
 .body__header-text {
     margin: 0;
     padding: 0;
@@ -312,6 +316,104 @@ body {
     color: #FFFFFF;
 }
 
-.body__link  {
+.body__link {
     margin-right: 1rem;
+}
+
+.body__nav-cards {
+    display: flex;
+    margin: 1.7rem 0rem;
+}
+
+.body__card {
+    margin-right: 0.31rem;
+}
+
+.card {
+    background: url(Object.jpg) no-repeat center;
+    background-size: cover;
+    width: 13.8rem;
+    height: 7.56rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 2px;
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-label {
+    color: #FFFFFF;
+    margin-top: 1.125rem;
+    margin-left: 1.688rem;
+    font-weight: 900;
+    font-size: 1.25rem;
+    line-height: 1.88rem;
+}
+
+.card-description {
+    color: #FFFFFF;
+    margin-left: 1.688rem;
+    margin-bottom: 0.863rem;
+    line-height: 1.88rem;
+    font-weight: 500;
+    font-size: 0.815rem;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-rows: 20.625rem 20rem 20.625rem;
+    grid-template-columns: 13.75rem 13.75rem 13.75rem 13.75rem;
+    column-gap: 0.44rem;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 15px rgba(30, 42, 53, 0.05);
+    border-radius: 2px;
+    z-index: -1;
+}
+
+.product-card__car-images {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-basis: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.product-card__benefit-list {
+    list-style: none;
+    padding: 0rem;
+    position: absolute;
+    margin-top: 0.625rem;
+    margin-left: 0.625rem;
+}
+
+.product-card__car-image {
+    max-width: 100%;
+}
+
+.product-card__benefit {
+    border-radius: 2px;
+    margin-bottom: 0.3125rem;
+    padding: 0rem 0.213rem;
+    width: fit-content;
+}
+
+.product-card__benefit_green {
+    background: #27C79A;
+}
+
+.product-card__benefit_white {
+    color: #1E2A35;
+    background: #FFFFFF;
+}
+
+.product-card__benefit_red {
+    background: #E86260;
 }
