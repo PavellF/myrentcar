@@ -6,118 +6,166 @@
     <meta name="description" content="The HTML5 Herald">
     <meta name="author" content="SitePoint">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 </head>
 <body>
 <script src="js/scripts.js"></script>
-<header></header>
-<img src="img.png" rel="mountains" class="head-image">
+
 <div class="root">
 
-    <nav class="navigation">
+    <header>
+        <nav class="navigation">
 
-        <div class="navigation navigation__main">
-            <label class="navigation__label">ВСЕ КУРОРТЫ</label>
-            <label class="navigation__label">О КОМПАНИИ</label>
-            <label class="navigation__label">КОНТАКТЫ</label>
-            <label class="navigation__label">ЖУРНАЛ О ЧЕХИИ</label>
-        </div>
-        <div class="navigation navigation__additional">
-            <span class="navigation__text">in English, please</span>
-            <div class="small-picker navigation__small-picker">
-                <div class="small-picker__dropdown">
-                    <label class="navigation__label small-picker__label">РУБ</label>
-                </div>
+            <div class="navigation navigation__main">
+                <label class="navigation__label">ВСЕ КУРОРТЫ</label>
+                <label class="navigation__label">О КОМПАНИИ</label>
+                <label class="navigation__label">КОНТАКТЫ</label>
+                <label class="navigation__label">ЖУРНАЛ О ЧЕХИИ</label>
+            </div>
+            <div class="navigation navigation__additional">
+                <span class="text_light-medium navigation__text">in English, please</span>
+                <div class="small-picker navigation__small-picker">
+                    <div class="small-picker__dropdown">
+                        <label class="navigation__label small-picker__label">РУБ</label>
+                    </div>
 
-                <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0L5 5L10 0H0Z" fill="white"/>
-                </svg>
-            </div>
-        </div>
-    </nav>
-    <div class="head">
-        <div class="head__left">
-            <h1 class="title">MYRENTACAR . ЧЕХИЯ</h1>
-            <span class="subtitle">Рекомендательный прокат автомобилей на курортах и в туристических городах</span>
-            <span class="page-title">Аренда в Чехии</span>
-            <ul class="statistics">
-                <li>Всего 2 345 автомобилей со средним чеком €24 в сутки</li>
-                <li>Всего 2 345 автомобилей со средним чеком €24 в сутки</li>
-                <li>Всего 2 345 автомобилей со средним чеком €24 в сутки</li>
-            </ul>
-            <div class="rent-datepicker">
-                <button class="button">
-                    <label class="button-label">Город получения и возврата</label>
-                    <span class="button-value">Карловы Вары</span>
-                </button>
-                <button class="button">
-                    <label class="button-label">Даты аренды</label>
-                    <span class="button-value">28 фев. – 9 мар. · 10 дней </span>
-                </button>
-            </div>
-        </div>
-        <div class="head__right">
-            <div class="head-reviews">
-                <div class="label-group">
-                    <span class="head-reviews__label">ОТЗЫВЫ · 3 956</span>
-                    <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M7.5 13.5211L6.4125 12.5484C2.55 9.10737 0 6.83789 0 4.05263C0 1.78316 1.815 0 4.125 0C5.43
-                           0 6.6825 0.596842 7.5 1.54C8.3175 0.596842 9.57 0 10.875 0C13.185 0 15 1.78316 15 4.05263C15
-                            6.83789 12.45 9.10737 8.5875 12.5558L7.5 13.5211Z"
-                              fill="#E86260"/>
+                    <svg class="label-icon" width="10" height="5" viewBox="0 0 10 5" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0L5 5L10 0H0Z" fill="white"/>
                     </svg>
                 </div>
-                <span class="head__reviews-sublabel">Мнение наших клиентов</span>
             </div>
+        </nav>
 
-            <ul class="head__help">
-                <li class="label-group">
-                    <svg class="label-icon" width="18" height="16" viewBox="0 0 18 16" fill="none"
-                         xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M15.92 1.01C15.72 0.42 15.16 0 14.5 0H3.5C2.84 0 2.29 0.42 2.08 1.01L0 7V15C0 15.55
+        <section class="head__content">
+
+            <img src="img.png" rel="mountains" class="head-image">
+
+            <div class="head">
+                <div class="head__left">
+                    <h1 class="head__title">MYRENTACAR . ЧЕХИЯ</h1>
+                    <span class="text_light-medium head__subtitle">Рекомендательный прокат автомобилей на курортах и в туристических городах</span>
+                    <h2 class="page-title head__page-title">Аренда в Чехии</h2>
+                    <ul class="head__statistics">
+                        <li>Всего 2 345 автомобилей со средним чеком €24 в сутки</li>
+                        <li>Всего 2 345 автомобилей со средним чеком €24 в сутки</li>
+                        <li>Всего 2 345 автомобилей со средним чеком €24 в сутки</li>
+                    </ul>
+
+                </div>
+                <div class="head__right">
+                    <div class="head-reviews">
+                        <div class="label-group">
+                            <span class="head-reviews__label">ОТЗЫВЫ · 3 956</span>
+                            <svg width="15" height="14" viewBox="0 0 15 14" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M7.5 13.5211L6.4125 12.5484C2.55 9.10737 0 6.83789 0 4.05263C0 1.78316 1.815 0 4.125 0C5.43
+                           0 6.6825 0.596842 7.5 1.54C8.3175 0.596842 9.57 0 10.875 0C13.185 0 15 1.78316 15 4.05263C15
+                            6.83789 12.45 9.10737 8.5875 12.5558L7.5 13.5211Z"
+                                      fill="#E86260"/>
+                            </svg>
+                        </div>
+                        <span class="text_light-medium head__reviews-sublabel">Мнение наших клиентов</span>
+                    </div>
+
+                    <ul class="head__help">
+                        <li class="label-group">
+                            <svg class="label-icon" width="18" height="16" viewBox="0 0 18 16" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M15.92 1.01C15.72 0.42 15.16 0 14.5 0H3.5C2.84 0 2.29 0.42 2.08 1.01L0 7V15C0 15.55
                                0.45 16 1 16H2C2.55 16 3 15.55 3 15V14H15V15C15 15.55 15.45 16 16 16H17C17.55 16 18 15.55
                                 18 15V7L15.92 1.01ZM3.5 11C2.67 11 2 10.33 2 9.5C2 8.67 2.67 8 3.5 8C4.33 8 5 8.67
                                  5 9.5C5 10.33 4.33 11 3.5 11ZM14.5 11C13.67 11 13 10.33 13 9.5C13 8.67 13.67 8 14.5
                                   8C15.33 8 16 8.67 16 9.5C16 10.33 15.33 11 14.5 11ZM2 6L3.5 1.5H14.5L16 6H2Z"
-                              fill="white"/>
-                    </svg>
-                    <a class="head__link" href="#">ОСОБЕННОСТИ ПДД</a>
-                </li>
-                <li class="label-group">
-                    <svg class="label-icon" width="18" height="18" viewBox="0 0 18 18" fill="none"
-                         xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M17.5 0L17.34 0.03L12 2.1L6 0L0.36 1.9C0.15 1.97 0 2.15 0 2.38V17.5C0 17.78 0.22 18
+                                      fill="white"/>
+                            </svg>
+                            <a class="link head__link" href="#">ОСОБЕННОСТИ ПДД</a>
+                        </li>
+                        <li class="label-group">
+                            <svg class="label-icon" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M17.5 0L17.34 0.03L12 2.1L6 0L0.36 1.9C0.15 1.97 0 2.15 0 2.38V17.5C0 17.78 0.22 18
                                0.5 18L0.66 17.97L6 15.9L12 18L17.64 16.1C17.85 16.03 18 15.85 18 15.62V0.5C18 0.22 17.78
                                 0 17.5 0ZM12 16L6 13.89V2L12 4.11V16Z"
-                              fill="white"/>
-                    </svg>
-                    <a class="head__link" href="#">ПОДБОРКА МАРШРУТОВ</a>
-                </li>
-                <li class="label-group">
-                    <svg class="label-icon" width="14" height="20" viewBox="0 0 14 20" fill="none"
+                                      fill="white"/>
+                            </svg>
+                            <a class="link head__link" href="#">ПОДБОРКА МАРШРУТОВ</a>
+                        </li>
+                        <li class="label-group">
+                            <svg class="label-icon" width="14" height="20" viewBox="0 0 14 20" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M7 0C3.13 0 0 3.13 0 7C0 12.25 7 20 7 20C7 20 14 12.25 14 7C14 3.13 10.87 0 7 0ZM7 9.5C5.62 9.5 4.5 8.38 4.5 7C4.5 5.62 5.62 4.5 7 4.5C8.38 4.5 9.5 5.62 9.5 7C9.5 8.38 8.38 9.5 7 9.5Z"
+                                      fill="white"/>
+                            </svg>
+                            <a class="link head__link" href="#">О СТРАНЕ <span
+                                    class="text-faded">  +  СКАЧАТЬ .PDF</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="rent-buttons">
+
+                <div class="rent-buttons__rent-datepicker">
+                    <button class="rent-buttons__button">
+                        <label class="text_light-medium rent-buttons__button-label">Город получения и возврата</label>
+                        <span class="rent-buttons__button-value">Карловы Вары</span>
+                    </button>
+                    <div class="rent-buttons__delimiter"></div>
+                    <button class="rent-buttons__button">
+                        <label class="text_light-medium rent-buttons__button-label">Даты аренды</label>
+                        <span class="rent-buttons__button-value">28 фев. – 9 мар. · 10 дней </span>
+                    </button>
+                </div>
+
+                <div class="rent-buttons__filter">
+                    <button class="rent-buttons__button">
+                        <label class="rent-buttons__button-value">Расширенные фильтры</label>
+                    </button>
+                    <svg class="label-icon rent-buttons__sort-icon" width="10" height="5" viewBox="0 0 10 5" fill="none"
                          xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M7 0C3.13 0 0 3.13 0 7C0 12.25 7 20 7 20C7 20 14 12.25 14 7C14 3.13 10.87 0 7 0ZM7 9.5C5.62 9.5 4.5 8.38 4.5 7C4.5 5.62 5.62 4.5 7 4.5C8.38 4.5 9.5 5.62 9.5 7C9.5 8.38 8.38 9.5 7 9.5Z"
-                              fill="white"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0L5 5L10 0H0Z" fill="white"/>
                     </svg>
-                    <a class="head__link" href="#">О СТРАНЕ + СКАЧАТЬ .PDF</a>
-                </li>
-            </ul>
-            <div class="filter__button">
-                <button class="button">
-                    <label class="button-value">Расширенные фильтры</label>
-                </button><svg class="label-icon" width="10" height="5" viewBox="0 0 10 5" fill="none"
-                              xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0L5 5L10 0H0Z" fill="white"/>
-            </svg>
+
+                </div>
 
             </div>
-        </div>
-    </div>
+
+        </section>
+
+    </header>
+
+    <section class="body">
+
+        <nav class="body__navigation">
+            <div class="body__head">
+                <h3 class="text_bold-large body__header-text">123 автомобилей из 2 102</h3>
+                <div class="body__view-mode">
+                    <span class="text_bold-medium">Сначала дешевые</span>
+                    <svg class="label-icon view-mode__icon" width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 6H5V0H0V6ZM0 13H5V7H0V13ZM6 13H11V7H6V13ZM12 13H17V7H12V13ZM6 6H11V0H6V6ZM12 0V6H17V0H12Z" fill="#999EA7"/>
+                    </svg>
+                    <svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 13H17V7H0V13ZM0 0V6H17V0H0Z" fill="#27C79A"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="body__nav-links">
+                <a class="body__link link text_bold-medium" href="#">Все <sup class="sup-text">112</sup></a>
+                <a class="body__link link text_bold-medium" href="#">Компактные <sup class="sup-text">89</sup></a>
+                <a class="body__link link text_bold-medium" href="#">Средний класс <sup class="sup-text">102</sup></a>
+                <a class="body__link link text_bold-medium" href="#">Люкс <sup class="sup-text">54</sup></a>
+                <a class="body__link link text_bold-medium" href="#">Внедорожники <sup class="sup-text">24</sup></a>
+            </div>
+        </nav>
+
+    </section>
 </div>
+
 
 </body>
 </html>

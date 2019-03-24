@@ -1,26 +1,29 @@
 html {
     font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
     margin: 0px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-header {
-    height: 80px;
-    background-color: black;
 }
 
 .root {
-    margin: 0rem 4.03rem;
+    margin: 0rem 6.25%;
 }
 
 .head-image {
     position: absolute;
     z-index: -1;
+    top: 0;
+    left: 0;
     width: 100%;
+}
+
+.head__content {
     height: 23rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .navigation {
@@ -43,10 +46,10 @@ header {
 
 .navigation__label {
     font-weight: bold;
-    line-height: 1.5rem;
-    font-size: 0.6rem;
+    line-height: 1.3rem;
+    font-size: 0.69rem;
     color: #FFFFFF;
-    margin-right: 3rem;
+    margin-right: 2.6rem;
     cursor: pointer;
 }
 
@@ -60,60 +63,51 @@ header {
     margin-right: 8px;
 }
 
-.small-picker__dropdown {
-    margin-right: 13px;
-}
-
 .small-picker__label {
     margin-right: 0px;
 }
 
 .navigation__text {
-    margin-right: 67px;
-    font-weight: normal;
-    line-height: 20px;
-    font-size: 12px;
-    color: #FFFFFF;
+    margin-right: 4.2rem;
 }
 
 
 .head {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
-.title {
+.head__title {
     font-style: italic;
     font-weight: bold;
-    line-height: 3rem;
-    font-size: 1.65rem;
+    line-height: 2.5rem;
+    font-size: 1.55rem;
     color: #FFFFFF;
     margin-bottom: 0px;
 }
 
-.subtitle {
-    color: #FFFFFF;
-    max-width: 19rem;
+.head__subtitle {
+    max-width: 16.3rem;
     display: block;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 0.84rem;
-    line-height: 1.3rem;
 }
 
 .page-title {
     font-weight: 900;
-    line-height: 5rem;
+    line-height: 5.63rem;
     font-size: 4rem;
     color: #FFFFFF;
-    margin: 1.5rem 0;
     display: block;
+    padding: 0;
+    margin: 0;
     font-family: sans-serif;
 }
 
-.statistics {
+.head__page-title {
+    margin-top: 1.45rem;
+    margin-bottom: 1.138rem;
+}
+
+.head__statistics {
     font-weight: normal;
     line-height: 1.4rem;
     font-size: 0.85rem;
@@ -125,47 +119,8 @@ header {
     margin-left: 0.5rem;
 }
 
-.rent-datepicker {
-    background: linear-gradient(0deg, rgba(30, 42, 53, 0.1), rgba(30, 42, 53, 0.1)), #27C79A;
-    border-radius: 2px;
-    display: flex;
-    height: 4.4rem;
-    padding-left: 1.3rem;
-    padding-right: 0.95rem;
-    width: 35.3rem;
-    justify-content: start;
-}
-
-.button {
-    display: flex;
-    flex-flow: column;
-    background: none;
-    border: none;
-    font-family: inherit;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-}
-
 .rent-datepicker__button:not(:last-child) {
     border-right: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.button-label {
-    font-weight: normal;
-    line-height: 20px;
-    font-size: 12px;
-    color: #FFFFFF;
-    mix-blend-mode: normal;
-    opacity: 0.8;
-}
-
-.button-value {
-    font-style: normal;
-    font-weight: 500;
-    line-height: 2rem;
-    font-size: 1rem;
-    color: #FFFFFF;
 }
 
 .head-reviews {
@@ -182,36 +137,27 @@ header {
 
 
 .head__reviews-sublabel {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 0.8rem;
-    line-height: 20px;
-    color: #FFFFFF;
+    margin-top: 0.58rem;
+    display: block;
 }
 
 .head__right {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-right: 3rem;
 }
 
 .head__help {
     list-style: none;
     margin: 0;
     padding: 0;
-    margin-top: 5.5rem;
+    margin-top: 4.5rem;
     display: flex;
     flex-direction: column;
     align-items: baseline;
     justify-content: space-between;
     height: 5.5rem;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 11px;
-    line-height: 20px;
-    color: #FFFFFF;
 }
 
 .label-group {
@@ -223,30 +169,149 @@ header {
     margin-right: 0.4rem;
 }
 
-.head__link {
+.head__left {
+    margin-bottom: 0.175rem;
+}
 
+.link {
     text-decoration: none;
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
-    font-size: 11px;
-    line-height: 20px;
+}
+
+.head__link {
+    font-size: 0.69rem;
+    line-height: 1.25rem;
     color: #FFFFFF;
 }
 
 .label-icon {
     margin: 0 0.7rem;
+    opacity: 0.7;
 }
 
-.filter__button {
+.view-mode__icon {
+    margin: 0 1.31rem;
+}
+
+.rent-buttons__sort-icon {
+    margin: 0;
+}
+
+.sup-text {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 0.69rem;
+    line-height: normal;
+    color: #999EA7;
+}
+
+.text-faded {
+    opacity: 0.7;
+}
+
+.rent-buttons__delimiter {
+    mix-blend-mode: normal;
+    opacity: 0.2;
+    border: 1px solid #FFFFFF;
+    margin-right: 0.94rem;
+    margin-left: 6.5rem;
+}
+
+.rent-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rent-buttons__button-label {
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+
+.rent-buttons__button-value {
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2rem;
+    font-size: 1rem;
+    color: #FFFFFF;
+}
+
+.rent-buttons__button {
+    display: flex;
+    flex-flow: column;
+    background: none;
+    border: none;
+    font-family: inherit;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+
+.rent-buttons__rent-datepicker {
+    background: linear-gradient(0deg, rgba(30, 42, 53, 0.1), rgba(30, 42, 53, 0.1)), #27C79A;
+    border-radius: 2px;
+    display: flex;
+    height: 4.4rem;
+    padding: 0rem 1.3rem;
+    min-width: 35rem;
+    justify-content: start;
+}
+
+.rent-buttons__filter {
     background: #27C79A;
     border-radius: 2px;
     display: flex;
-    margin-top: 4rem;
     align-items: center;
-    width: 16.55rem;
+    min-width: 16.55rem;
     height: 4.4rem;
     padding-left: 0.95rem;
     padding-right: 0.95rem;
     justify-content: space-between;
- }
+    margin-left: 0.3rem;
+}
+
+.body__head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 1.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.text_bold-large {
+    color: #232A36;
+    font-weight: 900;
+    font-size: 2.63rem;
+    line-height: 3.31rem;
+    font-family: inherit;
+}
+
+.body__header-text {
+    margin: 0;
+    padding: 0;
+}
+
+.text_bold-medium {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 2.123rem;
+    color: #232A36;
+}
+
+.text_light-medium {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    color: #FFFFFF;
+}
+
+.body__link  {
+    margin-right: 1rem;
+}
