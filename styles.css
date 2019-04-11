@@ -1,5 +1,5 @@
 html {
-    font-size: 16px;
+    font-size: 1.5625vw;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -62,7 +62,7 @@ body {
 }
 
 .navigation__text {
-    margin-right: 4.2rem;
+    margin-right: 4.8rem;
 }
 
 
@@ -77,7 +77,8 @@ body {
     line-height: 2.5rem;
     font-size: 1.55rem;
     color: #FFFFFF;
-    margin-bottom: 0px;
+    margin-bottom: 0rem;
+    margin-top: 1rem;
 }
 
 .head__subtitle {
@@ -93,7 +94,6 @@ body {
     display: block;
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
 }
 
 .head__page-title {
@@ -110,6 +110,7 @@ body {
     display: flex;
     flex-flow: column;
     padding: 0px;
+    margin: 0rem;
     margin-left: 0.5rem;
 }
 
@@ -122,9 +123,9 @@ body {
     font-style: normal;
     font-weight: 900;
     font-size: 1rem;
-    line-height: 20px;
+    line-height: 1.25rem;
     color: #FFFFFF;
-    margin-top: 30px;
+    margin-top: 1.875rem;
     margin-right: 1rem;
     margin-bottom: 0.4rem;
 }
@@ -160,7 +161,13 @@ body {
 }
 
 .head-reviews__label {
-    margin-right: 0.4rem;
+    /*margin-right: 0.4rem;*/
+}
+
+.head-reviews__label-icon {
+    margin: 0 0.5rem;
+    width: 1.125rem;
+    height: 1rem;
 }
 
 .head__left {
@@ -179,6 +186,14 @@ body {
     opacity: 0.7;
     width: 1.125rem;
     height: 1rem;
+    cursor: pointer;
+}
+
+.icon {
+    opacity: 0.7;
+    width: 1.125rem;
+    height: 1rem;
+    cursor: pointer;
 }
 
 .label-icon_small {
@@ -211,7 +226,7 @@ body {
     opacity: 0.2;
     border: 1px solid #FFFFFF;
     margin-right: 0.94rem;
-    margin-left: 6.5rem;
+    margin-left: 6.1rem;
 }
 
 .rent-buttons {
@@ -222,6 +237,7 @@ body {
 .rent-buttons__button-label {
     mix-blend-mode: normal;
     opacity: 0.8;
+    cursor: pointer;
 }
 
 .rent-buttons__button-value {
@@ -230,6 +246,7 @@ body {
     line-height: 2rem;
     font-size: 1rem;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 .rent-buttons__button {
@@ -241,6 +258,7 @@ body {
     justify-content: center;
     padding: 0;
     margin: 0;
+    cursor: pointer;
 }
 
 
@@ -252,6 +270,7 @@ body {
     padding: 0rem 1.3rem;
     min-width: 35rem;
     justify-content: start;
+    cursor: pointer;
 }
 
 .rent-buttons__filter {
@@ -265,6 +284,7 @@ body {
     padding-right: 0.95rem;
     justify-content: space-between;
     margin-left: 0.3rem;
+    cursor: pointer;
 }
 
 .body__head {
@@ -298,6 +318,11 @@ body {
     padding: 0;
 }
 
+.body__view-mode {
+    display: flex;
+    align-items: center;
+}
+
 .text_bold-medium {
     font-family: Montserrat;
     font-style: normal;
@@ -325,7 +350,7 @@ body {
     margin: 1.7rem 0rem;
 }
 
-.body__card {
+.body__card:not(:last-child) {
     margin-right: 0.31rem;
 }
 
@@ -361,19 +386,25 @@ body {
 
 .product-grid {
     display: grid;
-    grid-template-rows: 20.625rem 20rem 20.625rem;
+    grid-template-rows: 20.625rem 9rem 20.625rem;
     grid-template-columns: 13.75rem 13.75rem 13.75rem 13.75rem;
     column-gap: 0.44rem;
+    row-gap: 1.25rem;
 }
 
 .product-card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     background: #FFFFFF;
     box-shadow: 0px 5px 15px rgba(30, 42, 53, 0.05);
     border-radius: 2px;
-    z-index: -1;
+}
+
+.adverting {
+    border-radius: 3px;
+    margin-top: 1.433rem;
+    background: black;
+    grid-column: 4 span;
 }
 
 .product-card__car-images {
@@ -416,4 +447,75 @@ body {
 
 .product-card__benefit_red {
     background: #E86260;
+}
+
+.product-card__label {
+    color: #1E2A35;
+    line-height: 1.25rem;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+.product-card__info {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 0.925rem;
+}
+
+.product-card__car-info {
+    color: #1E2A35;
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    margin: 0.463rem 0;
+}
+
+.product-card__price-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.7rem;
+}
+
+.product-card__price {
+    line-height: 2.5rem;
+    color: #1E2A35;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.product-card__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0px;
+}
+
+.product-card__credit-info {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.button {
+    background: #27C79A;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 2px;
+    border: 0px;
+    padding: 0.333rem 3.925rem;
+    color: white;
+    font-weight: bold;
+    font-size: 1.15rem;
+    line-height: 1.9rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.body__footer {
+    width: 100%;
+    text-align: center;
+    padding: 3rem 0rem;
+}
+
+.footer {
+    background: black;
+    padding: 1.25rem 6.25%;
 }

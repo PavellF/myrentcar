@@ -5,6 +5,7 @@
     <title>The HTML5 Herald</title>
     <meta name="description" content="The HTML5 Herald">
     <meta name="author" content="SitePoint">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
           rel="stylesheet">
@@ -56,7 +57,7 @@
                     <div class="head-reviews">
                         <div class="label-group">
                             <span class="head-reviews__label">ОТЗЫВЫ · 3 956</span>
-                            <svg width="15" height="14" viewBox="0 0 15 14" fill="none"
+                            <svg class="head-reviews__label-icon" width="15" height="14" viewBox="0 0 15 14" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
                                       d="M7.5 13.5211L6.4125 12.5484C2.55 9.10737 0 6.83789 0 4.05263C0 1.78316 1.815 0 4.125 0C5.43
@@ -116,14 +117,14 @@
                     </button>
                     <div class="rent-buttons__delimiter"></div>
                     <button class="rent-buttons__button">
-                        <label class="text_light-medium rent-buttons__button-label">Даты аренды</label>
+                        <span class="text_light-medium rent-buttons__button-label">Даты аренды</span>
                         <span class="rent-buttons__button-value">28 фев. – 9 мар. · 10 дней </span>
                     </button>
                 </div>
 
                 <div class="rent-buttons__filter">
                     <button class="rent-buttons__button">
-                        <label class="rent-buttons__button-value">Расширенные фильтры</label>
+                        <span class="rent-buttons__button-value">Расширенные фильтры</span>
                     </button>
                     <svg class="label-icon rent-buttons__sort-icon label-icon_small" width="10" height="5"
                          viewBox="0 0 10 5" fill="none"
@@ -152,7 +153,7 @@
                               d="M0 6H5V0H0V6ZM0 13H5V7H0V13ZM6 13H11V7H6V13ZM12 13H17V7H12V13ZM6 6H11V0H6V6ZM12 0V6H17V0H12Z"
                               fill="#999EA7"/>
                     </svg>
-                    <svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="icon" width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M0 13H17V7H0V13ZM0 0V6H17V0H0Z"
                               fill="#27C79A"/>
                     </svg>
@@ -194,13 +195,15 @@
                 <ul class="product-card__benefit-list">
                     <li class="product-card__benefit text_bold-small product-card__benefit_green">95% БЕЗ РИСКА</li>
                     <li class="product-card__benefit text_bold-small product-card__benefit_green">БЕЗ ДЕПОЗИТА</li>
-                    <li class="product-card__benefit text_bold-small product-card__benefit_white"><span class="">КАСКО</span></li>
-                    <li class="product-card__benefit text_bold-small product-card__benefit_red"><span class="">-15%</span></li>
+                    <li class="product-card__benefit text_bold-small product-card__benefit_white"><span
+                            class="">КАСКО</span></li>
+                    <li class="product-card__benefit text_bold-small product-card__benefit_red"><span
+                            class="">-15%</span></li>
                     <li class="product-card__benefit text_bold-small product-card__benefit_white">8×</li>
                 </ul>
                 <div class="product-card__info">
                     <span class="product-card__label">Mitsubishi Outlander, 2017</span>
-                    <span class="product-card__info">2.0 AT, дизель</span>
+                    <span class="product-card__car-info">2.0 AT, дизель</span>
                     <div class="product-card__price-block">
                         <span class="product-card__price">20 000 ₽</span>
                         <svg class="label-icon product-card__icon" width="24" height="25" viewBox="0 0 24 25"
@@ -219,18 +222,20 @@
 
             <div class="product-card">
                 <div class="product-card__car-images">
-                    <img src="Object2.jpg" class="product-card__car-image" rel="image of car">
+                    <img src="ВАЗ-21103-2001-green.jpg" class="product-card__car-image" rel="image of car">
                 </div>
                 <ul class="product-card__benefit-list">
-                    <li class="product-card__benefit product-card__benefit_green">95% БЕЗ РИСКА</li>
-                    <li class="product-card__benefit product-card__benefit_green">БЕЗ ДЕПОЗИТА</li>
-                    <li class="product-card__benefit product-card__benefit_white">КАСКО</li>
-                    <li class="product-card__benefit product-card__benefit_red">-15%</li>
-                    <li class="product-card__benefit product-card__benefit_white">8×</li>
+                    <li class="product-card__benefit text_bold-small product-card__benefit_green">95% БЕЗ РИСКА</li>
+                    <li class="product-card__benefit text_bold-small product-card__benefit_green">БЕЗ ДЕПОЗИТА</li>
+                    <li class="product-card__benefit text_bold-small product-card__benefit_white"><span
+                            class="">КАСКО</span></li>
+                    <li class="product-card__benefit text_bold-small product-card__benefit_red"><span
+                            class="">-15%</span></li>
+                    <li class="product-card__benefit text_bold-small product-card__benefit_white">8×</li>
                 </ul>
                 <div class="product-card__info">
                     <span class="product-card__label">Mitsubishi Outlander, 2017</span>
-                    <span class="product-card__info">2.0 AT, дизель</span>
+                    <span class="product-card__car-info">2.0 AT, дизель</span>
                     <div class="product-card__price-block">
                         <span class="product-card__price">20 000 ₽</span>
                         <svg class="label-icon product-card__icon" width="24" height="25" viewBox="0 0 24 25"
@@ -249,18 +254,20 @@
 
             <div class="product-card">
                 <div class="product-card__car-images">
-                    <img src="Object2.jpg" class="product-card__car-image" rel="image of car">
+                    <img src="ВАЗ-21103-2001-green.jpg" class="product-card__car-image" rel="image of car">
                 </div>
                 <ul class="product-card__benefit-list">
-                    <li class="product-card__benefit product-card__benefit_green">95% БЕЗ РИСКА</li>
-                    <li class="product-card__benefit product-card__benefit_green">БЕЗ ДЕПОЗИТА</li>
-                    <li class="product-card__benefit product-card__benefit_white">КАСКО</li>
-                    <li class="product-card__benefit product-card__benefit_red">-15%</li>
-                    <li class="product-card__benefit product-card__benefit_white">8×</li>
+                    <li class="product-card__benefit text_bold-small product-card__benefit_green">95% БЕЗ РИСКА</li>
+                    <li class="product-card__benefit text_bold-small product-card__benefit_green">БЕЗ ДЕПОЗИТА</li>
+                    <li class="product-card__benefit text_bold-small product-card__benefit_white"><span
+                            class="">КАСКО</span></li>
+                    <li class="product-card__benefit text_bold-small product-card__benefit_red"><span
+                            class="">-15%</span></li>
+                    <li class="product-card__benefit text_bold-small product-card__benefit_white">8×</li>
                 </ul>
                 <div class="product-card__info">
                     <span class="product-card__label">Mitsubishi Outlander, 2017</span>
-                    <span class="product-card__info">2.0 AT, дизель</span>
+                    <span class="product-card__car-info">2.0 AT, дизель</span>
                     <div class="product-card__price-block">
                         <span class="product-card__price">20 000 ₽</span>
                         <svg class="label-icon product-card__icon" width="24" height="25" viewBox="0 0 24 25"
@@ -279,18 +286,152 @@
 
             <div class="product-card">
                 <div class="product-card__car-images">
-                    <img src="Object2.jpg" class="product-card__car-image" rel="image of car">
+                    <img src="ВАЗ-21103-2001-green.jpg" class="product-card__car-image" rel="image of car">
                 </div>
                 <ul class="product-card__benefit-list">
-                    <li class="product-card__benefit product-card__benefit_green">95% БЕЗ РИСКА</li>
-                    <li class="product-card__benefit product-card__benefit_green">БЕЗ ДЕПОЗИТА</li>
-                    <li class="product-card__benefit product-card__benefit_white">КАСКО</li>
-                    <li class="product-card__benefit product-card__benefit_red">-15%</li>
-                    <li class="product-card__benefit product-card__benefit_white">8×</li>
+                    <li class="product-card__benefit text_bold-small product-card__benefit_green">95% БЕЗ РИСКА</li>
+                    <li class="product-card__benefit text_bold-small product-card__benefit_green">БЕЗ ДЕПОЗИТА</li>
+                    <li class="product-card__benefit text_bold-small product-card__benefit_white"><span
+                            class="">КАСКО</span></li>
+                    <li class="product-card__benefit text_bold-small product-card__benefit_red"><span
+                            class="">-15%</span></li>
+                    <li class="product-card__benefit text_bold-small product-card__benefit_white">8×</li>
                 </ul>
                 <div class="product-card__info">
                     <span class="product-card__label">Mitsubishi Outlander, 2017</span>
-                    <span class="product-card__info">2.0 AT, дизель</span>
+                    <span class="product-card__car-info">2.0 AT, дизель</span>
+                    <div class="product-card__price-block">
+                        <span class="product-card__price">20 000 ₽</span>
+                        <svg class="label-icon product-card__icon" width="24" height="25" viewBox="0 0 24 25"
+                             fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.6">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M11 17.7H13V11.7H11V17.7ZM12 2.69995C6.48 2.69995 2 7.17995 2 12.7C2 18.22 6.48 22.7 12 22.7C17.52 22.7 22 18.22 22 12.7C22 7.17995 17.52 2.69995 12 2.69995ZM12 20.7C7.59 20.7 4 17.11 4 12.7C4 8.28995 7.59 4.69995 12 4.69995C16.41 4.69995 20 8.28995 20 12.7C20 17.11 16.41 20.7 12 20.7ZM11 9.69995H13V7.69995H11V9.69995Z"
+                                      fill="#999EA7"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <span class="product-card__credit-info"><span class="text-faded">2 000</span> 1 600 ₽ в день</span>
+                </div>
+            </div>
+
+            <div class="adverting">
+
+            </div>
+
+            <div class="product-card">
+                <div class="product-card__car-images">
+                    <img src="ВАЗ-21103-2001-green.jpg" class="product-card__car-image" rel="image of car">
+                </div>
+                <ul class="product-card__benefit-list">
+                    <li class="product-card__benefit text_bold-small product-card__benefit_green">95% БЕЗ РИСКА</li>
+                    <li class="product-card__benefit text_bold-small product-card__benefit_green">БЕЗ ДЕПОЗИТА</li>
+                    <li class="product-card__benefit text_bold-small product-card__benefit_white"><span
+                            class="">КАСКО</span></li>
+                    <li class="product-card__benefit text_bold-small product-card__benefit_red"><span
+                            class="">-15%</span></li>
+                    <li class="product-card__benefit text_bold-small product-card__benefit_white">8×</li>
+                </ul>
+                <div class="product-card__info">
+                    <span class="product-card__label">Mitsubishi Outlander, 2017</span>
+                    <span class="product-card__car-info">2.0 AT, дизель</span>
+                    <div class="product-card__price-block">
+                        <span class="product-card__price">20 000 ₽</span>
+                        <svg class="label-icon product-card__icon" width="24" height="25" viewBox="0 0 24 25"
+                             fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.6">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M11 17.7H13V11.7H11V17.7ZM12 2.69995C6.48 2.69995 2 7.17995 2 12.7C2 18.22 6.48 22.7 12 22.7C17.52 22.7 22 18.22 22 12.7C22 7.17995 17.52 2.69995 12 2.69995ZM12 20.7C7.59 20.7 4 17.11 4 12.7C4 8.28995 7.59 4.69995 12 4.69995C16.41 4.69995 20 8.28995 20 12.7C20 17.11 16.41 20.7 12 20.7ZM11 9.69995H13V7.69995H11V9.69995Z"
+                                      fill="#999EA7"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <span class="product-card__credit-info"><span class="text-faded">2 000</span> 1 600 ₽ в день</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-card__car-images">
+                    <img src="ВАЗ-21103-2001-green.jpg" class="product-card__car-image" rel="image of car">
+                </div>
+                <ul class="product-card__benefit-list">
+                    <li class="product-card__benefit text_bold-small product-card__benefit_green">95% БЕЗ РИСКА</li>
+                    <li class="product-card__benefit text_bold-small product-card__benefit_green">БЕЗ ДЕПОЗИТА</li>
+                    <li class="product-card__benefit text_bold-small product-card__benefit_white"><span
+                            class="">КАСКО</span></li>
+                    <li class="product-card__benefit text_bold-small product-card__benefit_red"><span
+                            class="">-15%</span></li>
+                    <li class="product-card__benefit text_bold-small product-card__benefit_white">8×</li>
+                </ul>
+                <div class="product-card__info">
+                    <span class="product-card__label">Mitsubishi Outlander, 2017</span>
+                    <span class="product-card__car-info">2.0 AT, дизель</span>
+                    <div class="product-card__price-block">
+                        <span class="product-card__price">20 000 ₽</span>
+                        <svg class="label-icon product-card__icon" width="24" height="25" viewBox="0 0 24 25"
+                             fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.6">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M11 17.7H13V11.7H11V17.7ZM12 2.69995C6.48 2.69995 2 7.17995 2 12.7C2 18.22 6.48 22.7 12 22.7C17.52 22.7 22 18.22 22 12.7C22 7.17995 17.52 2.69995 12 2.69995ZM12 20.7C7.59 20.7 4 17.11 4 12.7C4 8.28995 7.59 4.69995 12 4.69995C16.41 4.69995 20 8.28995 20 12.7C20 17.11 16.41 20.7 12 20.7ZM11 9.69995H13V7.69995H11V9.69995Z"
+                                      fill="#999EA7"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <span class="product-card__credit-info"><span class="text-faded">2 000</span> 1 600 ₽ в день</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-card__car-images">
+                    <img src="ВАЗ-21103-2001-green.jpg" class="product-card__car-image" rel="image of car">
+                </div>
+                <ul class="product-card__benefit-list">
+                    <li class="product-card__benefit text_bold-small product-card__benefit_green">95% БЕЗ РИСКА</li>
+                    <li class="product-card__benefit text_bold-small product-card__benefit_green">БЕЗ ДЕПОЗИТА</li>
+                    <li class="product-card__benefit text_bold-small product-card__benefit_white"><span
+                            class="">КАСКО</span></li>
+                    <li class="product-card__benefit text_bold-small product-card__benefit_red"><span
+                            class="">-15%</span></li>
+                    <li class="product-card__benefit text_bold-small product-card__benefit_white">8×</li>
+                </ul>
+                <div class="product-card__info">
+                    <span class="product-card__label">Mitsubishi Outlander, 2017</span>
+                    <span class="product-card__car-info">2.0 AT, дизель</span>
+                    <div class="product-card__price-block">
+                        <span class="product-card__price">20 000 ₽</span>
+                        <svg class="label-icon product-card__icon" width="24" height="25" viewBox="0 0 24 25"
+                             fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.6">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M11 17.7H13V11.7H11V17.7ZM12 2.69995C6.48 2.69995 2 7.17995 2 12.7C2 18.22 6.48 22.7 12 22.7C17.52 22.7 22 18.22 22 12.7C22 7.17995 17.52 2.69995 12 2.69995ZM12 20.7C7.59 20.7 4 17.11 4 12.7C4 8.28995 7.59 4.69995 12 4.69995C16.41 4.69995 20 8.28995 20 12.7C20 17.11 16.41 20.7 12 20.7ZM11 9.69995H13V7.69995H11V9.69995Z"
+                                      fill="#999EA7"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <span class="product-card__credit-info"><span class="text-faded">2 000</span> 1 600 ₽ в день</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-card__car-images">
+                    <img src="ВАЗ-21103-2001-green.jpg" class="product-card__car-image" rel="image of car">
+                </div>
+                <ul class="product-card__benefit-list">
+                    <li class="product-card__benefit text_bold-small product-card__benefit_green">95% БЕЗ РИСКА</li>
+                    <li class="product-card__benefit text_bold-small product-card__benefit_green">БЕЗ ДЕПОЗИТА</li>
+                    <li class="product-card__benefit text_bold-small product-card__benefit_white"><span
+                            class="">КАСКО</span></li>
+                    <li class="product-card__benefit text_bold-small product-card__benefit_red"><span
+                            class="">-15%</span></li>
+                    <li class="product-card__benefit text_bold-small product-card__benefit_white">8×</li>
+                </ul>
+                <div class="product-card__info">
+                    <span class="product-card__label">Mitsubishi Outlander, 2017</span>
+                    <span class="product-card__car-info">2.0 AT, дизель</span>
                     <div class="product-card__price-block">
                         <span class="product-card__price">20 000 ₽</span>
                         <svg class="label-icon product-card__icon" width="24" height="25" viewBox="0 0 24 25"
@@ -310,9 +451,17 @@
 
         </section>
 
+        <div class="body__footer">
+            <button class="button">Подгрузить ещё</button>
+        </div>
+
     </section>
+
 </div>
 
+<footer class="footer">
+    <a class="link text_bold-small" href="https://github.com/PavellF">https://github.com/PavellF</a>
+</footer>
 
 </body>
 </html>
